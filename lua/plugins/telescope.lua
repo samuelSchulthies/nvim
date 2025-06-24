@@ -11,7 +11,7 @@ return {
     },
     {
         "nvim-telescope/telescope-ui-select.nvim",
-        configure = function()
+        config = function()
             require("telescope").setup({
                 extensions = {
                     ["ui-select"] = {
