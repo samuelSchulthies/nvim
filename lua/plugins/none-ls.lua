@@ -6,7 +6,7 @@ return {
             sources = {
                 null_ls.builtins.formatting.stylua, --for lua
                 null_ls.builtins.formatting.black, --for python
-                null_ls.builtins.diagnostics.isort
+--                null_ls.builtins.diagnostics.isort
             },
         })
 
