@@ -16,12 +16,11 @@ require("lazy").setup("plugins")
 
 -- not sure why this fixes bash. From chatGPT
 
-require('lspconfig').bashls.setup({
-  cmd = {
-    'node',
-    '--experimental-wasm-reftypes',
-    vim.fn.stdpath('data') .. '/mason/packages/bash-language-server/node_modules/.bin/bash-language-server',
-    'start',
-  },
+require("lspconfig").bashls.setup({
+    cmd = {
+        "node",
+        "--experimental-wasm-reftypes",
+        vim.fn.stdpath("data") .. "/mason/packages/bash-language-server/node_modules/.bin/bash-language-server",
+        "start",
+    },
 })
-
